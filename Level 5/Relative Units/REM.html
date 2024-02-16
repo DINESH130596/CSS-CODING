@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* rem me universal me bhi font size define kr skte hai */
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+
+           
+        }
+        #first{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(19, 226, 16);  
+            font-size: 10px;          
+        }
+        #second{
+             /* humne em me dekha tha ki jo fontsize dete ho parent me uska double ho jata hai second ke liye kyoki hum second me 2em de dete hai lekin REM me humne agar upar universal selector me fontsize define krdi ek baar me to kya hoga ki universal selector ki fontsize into child means ke second ki font size value calculate hoti hai, usko REM bolte hai   */
+            font-size: 2rem;
+            background-color: rgb(222, 14, 160);
+        }
+    </style>
+</head>
+<body>
+    Body text
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+</body>
+</html>

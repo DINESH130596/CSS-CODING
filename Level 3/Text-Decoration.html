@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        /* text decoration jyada tr links me used hota hai, hum log underline, overline, ya line-through de skte hai, mene tino ke example krke dikhaye hai browser pr run krke dekho */
+        #head{
+            background-color: yellowgreen;
+            text-decoration: underline;
+        }
+        #tom{
+            background-color: blue;
+            text-decoration: overline;
+        }
+        #jerry{
+            background-color: chocolate;
+            text-decoration: line-through;
+        }
+        #link{
+            text-decoration: none;
+            /* text decoration me hum none kr skte hai lekin phir browser pr jo naam ayega uske niche koi line nhi aayegi to vo link jaise nhi lagega isliye jyada tr ye used nhi hota  */
+        }
+    </style>
+</head>
+<body>
+    <!-- agar hume link krna hai to anchor tag ka istemal kr skte hai -->
+   <h1 id="head">This is my text</h1>
+   <h1 id="tom">This is tom</h1>
+   <h1 id="jerry">This is jerry</h1>
+    <a id="link" href="#">this is link</a>
+</body>
+</html>

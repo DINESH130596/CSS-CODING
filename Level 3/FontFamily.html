@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FontFamily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <style>
+        /* niche alag alag font ke types hai jise humne first , second me define kiya hai  */
+    #first{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #second{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* aur ye last wala humne google font se uthaya hai humne kya kiya hai ki google font se ek font ke url ko copy kiya aur usko style ke upar head me paste kiya hai aur uske bad google font se url ke niche rules hota hai, rules means font family ki method usko copy krke usko apne styles me lagana jisse kya hota hai uska font apne txt me lg jata hai, jese humne third wale pe honk lagaya hai  */
+    #third{
+        font-family: 'Honk', system-ui;
+    }
+    </style>
+</head>
+<body>
+    <!-- font family kyu banate hai kyoki agar koi koi font hum jb define krte hai to vo font browser pr kabhi kabhi run nhi hota isliye font family banayi hui rehti hai, jisme multiple fonts hote hai hum koi bhi used kr skte hai -->
+    <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, hic?</p>
+    <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, hic?</p>
+    <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, hic?</p>
+</body>
+</html>

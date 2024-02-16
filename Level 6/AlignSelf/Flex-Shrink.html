@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink</title>
+
+    <!-- humne pehle kya dekha tha agar wrap kiya toh undar ke boxex jo hai vo sare automatic shrink ho jate the agar unki size yani ke width container ke size se jyada ja rhi hai, lekin flex-shrink kya hota hai ki undar ke jo boxes or data hai usme se hume kisi ek ko shrink krna hai to hum kr skte hai flex-shrink ki madat se -->
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            width: 1200px;
+            background-color: crimson;
+            display: flex;
+           
+        }
+        .Box{
+            height: 150px;
+            width: 250px;
+            border: 2px solid rgb(2, 2, 2);
+            margin: 4px;
+            
+        }
+        #Box1{
+            background-color: blueviolet;
+        }
+        #Box2{
+            background-color: red;
+        }
+        #Box3{
+            background-color: rgb(8, 237, 42);
+            
+            flex-shrink:  0;
+            /* flex-shrink ki madat se hum log particular kisi ek box ki sizes ko set bhi kr skte hai, yani ke kya ki humne abhi upar container ki width ko 1200px set kiya hai kyoki 1000 to used hi hogi kyoki box ki width ko hi 250px rakha hai aur 4 boxes hai toh 250*4,  aur Box3 ke undar flex-shrink ko Zero(0) set kiya hai matlab jab bhi width kam hogi container ki to teeno boxes shrink honge lekin box 3 nhi hoga, zero set kiya hai na isliye. */
+
+        }
+        #Box4{
+            background-color: rgb(239, 9, 224);
+        }
+        
+    </style>
+</head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div id="Box1" class="Box">1</div>
+                <div id="Box2" class="Box">2</div>
+                <div id="Box3" class="Box">3</div>
+                <div id="Box4" class="Box">4</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

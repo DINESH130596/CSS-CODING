@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicelevel2</title>
+    <style>
+        /* ye jo niche star lagake curly bracket me define kiya hai vo margin aur padding ko lagane ke liye kiya hai, dono ko 0% diya hai yane ke browser pr jo naam aayega this is my nav bar vo uska background color jo hai vo fit to screen aayega kahise bhi chutega nhi  */
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #bar{
+            background-color: aquamarine;
+            color: rgba(103, 18, 18, 0.8);
+        }
+        main{
+            height: 500px;
+            background-color: blanchedalmond;
+        }
+        #product{
+            width: 300px;
+            height: 300px;
+            background-image: url(jeansPant.avif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-color: gray;
+            /*  hum log ek line me bhi background ke sare properties define kr skte hai lekin usme background size nhi aayega isliye alag alag hi krna hamesha niche uska example hai
+             for ex:-> background: green url(jeansPant.avif) no-repeat center;  */
+            /* agar img screen pr achhe se manage nhi ho rha hai to background-size lagake contain kr dena atleast img complete dikhti hai */
+        }
+    </style>
+</head>
+<body>
+    <!-- generally 3 section me divide hota hai page header, main, footer, and div bar header me likh skte hai, usse farak to kuch nhi padta hai lekin semantic ho jata aur achhe se show hota hai, header ko body me likhte hai -->
+    <header>
+        <div id="bar">This is my nav bar</div>
+    </header>
+    <main>
+        <div id="product">Product 1</div>
+    </main>
+    
+</body>
+</html>

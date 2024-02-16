@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundImg</title>
+    <style>
+        /* hum log jabhi bhi background-image: url(imagename.extenion) ye property used krte hai to, image ko direct koi bhi img ko server se uthake yaha laga denge to vo img yaha nhi dikhegi, actual me vo img dikhegi lekin us img ka pixels bohot bada hota hai aur hum niche dekhoge icon me 50px set kiya hai isliye vo img ka ek chotasa part aapka screen pr dikhta hai aur vo blank hota hai aur hume lagta hai ki img nhi dikh rhi  */
+        #icon{
+            height: 50px;
+            width: 50px;
+            
+            /* background img jo hai vo url dene ke liye hota hai aur */
+            background-image: url(myntra.jpg);
+            
+            /* size jo hai vo height and width ko adjust krne ke liye hota hai jisko aap inspect krne ke bad vha se bhi size aur width adjsut kr skte ho */
+            background-size: contain;
+            
+            /* and sabse badiya repeat hota hai jo photo ki size kaise bhi vo ek hi baar me 1 hi photo dikhata hai, repeat section me aap x axis aur y axis me bhi image ko dikha skte hai */
+            background-repeat: no-repeat;
+
+            /* Position jo hai vo picture ko konse direction me dikhana hai vo set krta hai */
+            background-position: bottom;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="icon"></div>
+</body>
+</html>

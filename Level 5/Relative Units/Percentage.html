@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* yaha pr humne sirf first me height aur width set kiya hai lekin phir bhi vo second ko apply ho rhi hai, ye kyu ho rha hai kyuki second hai child aur first hai parent to second jo hai parent ki properties ko access kr skta hai, aur aisa jaroori nhi hai ki second ko hum log alag se properties nhi de skte usko bhi hum height, width, de skte hai niche jo second hai vaha pr mene comment me apply krke dekha bhi hai usko uncomment krke ek baar dekhlo browser pr run krke  */
+        #first{
+            height: 100px;
+            width: 200px;
+            background-color: red;            
+        }
+        #second{
+            /* niche mene alag se 50% width ko set kiya hai matlab ki usse kya hoga agar me run krke browser pr jau aur uske baad inspect kru to vha pr aap dekh skte hai ki jese me first ki width ko kam krne jaunga to automatically second ki width bhi kam ho jayegi kyoki vo first ke under hai aur second ko humne 50% diya hai matlab vo first ke 50% se kam hi hoga, aur vaise hi hum second ke alag se height bhi define kr skte hai     */
+
+            /* width: 50%; */
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+</body>
+</html>

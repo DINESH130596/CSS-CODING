@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxSizing</title>
+    <!-- kayi baar kya hota hai hum log border aur padding dete hai box ko to uski size jo hai vo change ho jati hai uski vajah se hamari page me dikhhat aati hai to isliye box-sizing used krte hai-->
+    <!-- isme jo box sizing hoti hai content box aur border box lekin jo content box hota hai vo bydefault hota hai -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            height: 100px; width: 100px;
+            border: 6px solid orangered;
+            background-color: yellowgreen;
+        }
+        #button1{
+            box-sizing: border-box;
+        }
+        #button2{
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <button id="button1">Click me</button>
+    <button id="button2">Click me</button>
+</body>
+</html>

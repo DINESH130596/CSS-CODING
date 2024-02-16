@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+
+    <!-- Flex Direction me 4 directions hoti hai row, row-reverse, column, column-reverse -->
+
+    <!-- smjlo ek container me mene flex-direction : row diya aur usme values diya 1,2,3,4 to container me values left se right jayegi lekin agar me row-reverse krdu to values right se left me jayegi, aur vaisehi column me bhi hai column diya to top se start hoga aur column-reverse diya to bottom se top ki aur. -->
+    <style>
+    .container{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        background-color: crimson;
+    
+    }
+    .items{
+        height: 100px;
+        
+        /* agar humne itmes ki width agar container ki width se jyada dedi smjlo to items ki width vo automatic set kr leta hai container ke size ke hisabse vo container se bahar nhi jata */
+        width: 100px;
+        border: 2px solid rgb(28, 230, 10);
+        margin: 4px;
+        background-color: blueviolet;
+    }
+</style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+        </div>        
+    </main>
+    
+</body>
+</html>

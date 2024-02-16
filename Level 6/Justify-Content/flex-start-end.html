@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 50vh;
+            background-color: crimson;
+            display: flex;
+            
+           
+            /* justify-content: flex-end; */
+            justify-content: flex-start;
+            /* flex-start means k ek container me values jo hai vo ekdum suru se start hogi, flex-end jo hai vo container me values jo hai vo last tk sarak jayegi yani ke row-reverse jaisi ulti values start nhi hogi, values vaisehi rahegi 1,2,3.. lekin  aakhir me sarak jayegi container ke, */
+        }
+        .Box{
+            height: 70px;
+            width: 80px;
+            border: 2px solid rgb(28, 230, 10);
+            margin: 4px;
+            background-color: blueviolet;
+        }
+    </style>
+    </head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div class="Box">1</div>
+                <div class="Box">2</div>
+                <div class="Box">3</div>
+                <div class="Box">4</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

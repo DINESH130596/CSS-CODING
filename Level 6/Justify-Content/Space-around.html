@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 50vh;
+            background-color: crimson;
+            display: flex;
+
+            justify-content: space-around;
+            /* around kya hai ki left me thodasa distance chutega uske baad pehla element aayega uske baad smjlo container me 3 elements hai toh distance jo hai same aayega teeno elements ke liye, aur aakhir wala distance same rahega start wale se, ek baar run krke dekho smj jaoge   */
+        }
+        .Box{
+            height: 70px;
+            width: 80px;
+            border: 2px solid rgb(28, 230, 10);
+            margin: 4px;
+            background-color: blueviolet;
+        }
+    </style>
+    </head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div class="Box">1</div>
+                <div class="Box">2</div>
+                <div class="Box">3</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

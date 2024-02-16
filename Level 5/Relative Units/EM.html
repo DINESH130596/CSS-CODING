@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Relative Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #first{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(19, 226, 16);  
+            font-size: 25px;          
+        }
+        #second{
+            /* niche humne font-size me 2em used kiya hai uska meaning hai ki upar dekho mene first me font size 25px used kiya hai, 2em matlab kya ki jitna aapne parent me size used kiya hua hota hai uska double 2em hota hai isliye 2em used krte hai, abhi upar 25px hai to niche 50px ho gya hoga browser pr, */
+
+            /* aur ek baat ki 2em matlab ki multiply by 2 yane ke parent me jo value hoti hai uske into 2 hota hai, smj lo 3em bhi aap le skte hai to value into 3 aisa hoga phir */
+            font-size: 2em;
+            background-color: rgb(222, 14, 160);
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+</body>
+</html>

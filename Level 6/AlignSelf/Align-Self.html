@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+
+    <!-- abhi tk humne jitne bhi categories dekhe vo sab apply hue the container pr lekin abhi jo used krenge vo jo hamare items hai yani ke boxex yani ke andar ka data us pr apply honge usko bolte hai align-self, isiliye humne align-self ka folder bhi alag se banaya hai -->
+    
+    <!-- align self kya krta hai ki smj lo ki ek container me hamare pass 4 boxes hai, usme se hume 1 box ko alag se niche ki aur dikhana hai to uske liye hum used krenge align self. jese humne isme box3 ke jo colour hai uske liye used kiya hai -->
+
+    <!-- ek aur baat align self tab hi kaam krega jb aapne upar align-content used nhi kiya hoga, kyoki align-content ka kaam hai data ko pass me rakhna hai to self ka kya fayda rahega,  aap align-items used kr skte ho uski jagah pr -->
+    
+
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            
+            flex-wrap: wrap;
+
+
+
+        }
+        .Box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid rgb(2, 2, 2);
+            margin: 4px;
+            
+        }
+        #Box1{
+            background-color: blueviolet;
+        }
+        #Box2{
+            background-color: red;
+        }
+        #Box3{
+            background-color: rgb(8, 237, 42);
+            align-self: flex-end;
+            /* align self box ko alag dikhane k liye used krte hai */
+
+            /*  align self me hum flex-end, flex-start, aur center aise used kr skte hai  */
+            
+
+        }
+        #Box4{
+            background-color: rgb(239, 9, 224);
+        }
+        
+    </style>
+</head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div id="Box1" class="Box">1</div>
+                <div id="Box2" class="Box">2</div>
+                <div id="Box3" class="Box">3</div>
+                <div id="Box4" class="Box">4</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

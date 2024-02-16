@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+
+            align-content: center;
+            /* align content kya krta hai ki data ke beech me spacing decide krta hai, abhi niche .Box me mene height aur width ko 100px set kiya hai, lekin usko inspect krke dekhna width jo hai vo pura 100px nhi le rha hai vo shrink ho ja rha hai, to uske liye mene niche flex-wrap: wrap ko used kiya hai, niche diye gye flex wrap ke line ko chalu krke phir run krke dekhna ek baar, aur uske baad inspect krke dekhna barabar 100*100 px aa rha hai */
+            /* lekin ye humesha yaad rkhna ki align-items jo hai vo data beech me gap distance rakta hai, jo align-content nhi rkhta */
+            flex-wrap: wrap;
+
+
+
+
+        }
+        .Box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(28, 230, 10);
+            margin: 4px;
+            background-color: blueviolet;
+        }
+    </style>
+    </head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div class="Box">1</div>
+                <div class="Box">2</div>
+                <div class="Box">3</div>
+                <div class="Box">4</div>
+                <div class="Box">5</div>
+                <div class="Box">6</div>
+                <div class="Box">7</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

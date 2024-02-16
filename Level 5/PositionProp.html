@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: brown;
+            margin: 10px;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        #box1{
+            position: static;
+            /* static means ke default jo element jaha hai vahi pr dikhata hai browser pr koi difference nhi hota */
+        }
+        #box2{
+            position: relative;
+            top: 5px;
+            left: 50px;
+            /* aur relative jo hai vo static ke jaisa hi dikhta hai, */
+        }
+        #box3{
+            position: fixed;
+            /* fixed means kya hota hai ki dusre boxex ya element jo hai vo page scroll krte wakt upar jayenge lekin box 3 page ke saath upar jayenge lekin box3 jo hai vo page ke saath vhi rhega vo nichle direction me jayega */
+        }
+        #box4{
+            position: absolute;
+            /* absolute means vo ek corner se start hoga yani ke vo ek kone se start hoga */
+            /* absolute generally kb used hota jb hume ek element ke upar ek ko dikhana tb , yani ke vo absolute dikhane ke baad vo wala element page se upar aa jata hai */
+            top: 700px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+    <div id="box4" class="box">Box 4</div>
+</body>
+</html>

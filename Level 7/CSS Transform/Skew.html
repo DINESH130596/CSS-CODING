@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew</title>
+
+    <style>
+        .Box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: lawngreen;
+            position:relative;
+            top: 50px;
+            left: 50px;
+            transition: all 1s ease-in-out 1s;
+        }
+        
+        .Box:hover{
+            transform: skew(50deg);
+            /* skew jo hai vo pixel me nhi hota vo degree me dena padta hai, yani k humne 50deg diya hai toh jaise hi humne run kiya browser pr to vo box 50deg me thoda sa tedha ho gya  */
+        }
+    </style>
+</head>
+<body>
+    <div class="Box">Skew</div>
+</body>
+</html>

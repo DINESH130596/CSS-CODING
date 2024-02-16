@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    
+    <!-- Flex Grow kya hai actually smj lete hai, niche diya hai ki actually flex grow kya work krta hai -->
+
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            width: 700px ;
+
+        }
+        .Box{
+            height: 100px;
+            width: 150px;
+            border: 2px solid rgb(2, 2, 2);
+            margin: 4px;
+            
+        }
+        #Box1{
+            background-color: blueviolet;
+        }
+        #Box2{
+            background-color: red;
+        }
+        #Box3{
+            background-color: rgb(8, 237, 42);
+            flex-grow: 1 ;
+            /* hume agar koi ek particular item ko strech krna hai to hum flex-grow kr skte hai, abhi humne flex grow: 1 diya hai box3 ke liye to vo strech ho gya hai, hum sirf 1 item ko hi strech kr skte hai aisa nhi hai, sare items ko bhi kr skte hai */
+        }
+        #Box4{
+            background-color: rgb(239, 9, 224);
+        }
+        
+    </style>
+</head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div id="Box1" class="Box">1</div>
+                <div id="Box2" class="Box">2</div>
+                <div id="Box3" class="Box">3</div>
+                <div id="Box4" class="Box">4</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Transform</title>
+    <!-- transform jo hai vo kisi bhi elements k shape ko transform kr skta hai, isme 4 types hote hai pehla rotate(), scale(), skew(), aur translate()  -->
+
+    <style>
+        .Box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position:relative;
+            top: 50px;
+            left: 50px;
+
+            /* transform: rotate(45deg); */
+            /* humne upar rotate me 45 degree rotate kiya hai box ko, degree ko humesha short form me deg hi likhana, */
+
+            /* humne transform ke andar transition bhi used kiya hai, matlab used kr skte */
+            transition: all 1s ease-in-out 1s;
+            
+        }
+        
+            /* hum isme automatically hover krke bhi rotate kr skte hai, uske liye upar jo transform likha hai vo hume hover condition ke andar likhna padega */
+        .Box:hover{
+                transform: rotate(45deg);
+            }
+    </style>
+</head>
+<body>
+    <div class="Box">Rotate</div>
+</body>
+</html>

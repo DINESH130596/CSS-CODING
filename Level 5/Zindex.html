@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zindex</title>
+    <!-- Z Index means ek level ke upar dusri level hoti hai yani ke jaise yt pr tutorials sikhate wkt mentor kaise corner pr apni video profile ko dikhate hai vo ek page ke upar hi hota hai, bs niche alag window screen hoti hai aur uske upar video ki ek screen hoti hai, iska simple sa meaning mobile lelo jaise mobile pr hum kuch dekh rahe hote hai aur upar koi message ka pop-up girta hai usko bolte hai Z-Index -->
+    
+    <!-- bydefault Z-index hota hai Zero(0) jaise hi aap 1 denge to vo positive me aa jayega matlab screen ke upar aayega aur aapne agar -1 diya to vo negative me jayega -->
+
+    <!-- Z-index aap position static ke liye nahi de skte, kyu nhi de skte kyoki hum log zindex ka used ek ke upar ek dikhane ke liye krte hai aur static jo hai vo ek line me ek niche ek aata hai isliye   -->
+    
+    <!-- abhi niche ka jo example hai usko browser pr run krke dekho tumko smj aa jayega -->
+
+    <style>
+        .container{
+            position: fixed;
+        }
+        .box1, .box2{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: darkkhaki;
+            border: 3px dashed black;
+        }
+        .box1{
+            background-color: darkkhaki;
+            z-index: 1;
+        }
+        .box2{
+            background-color: rgb(18, 225, 170);
+            left: 70px;
+            top: 50px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box1">Z-index 1</div>
+    <div class="box2">Z-index 2</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <!-- jab bhi hum kisi page ke upar koi bhi button pr hover krte hai tb vo button kya dikhata hai vo halka sa react hota hai yani ke vo dikhata hai ki me clickable button hu to vo kiski help se hota hai vo hota hai pseudo class ki help se-->
+
+    <style>
+        .Pseudo{
+            height: 25px;
+            width: 150px;
+            background-color: gray;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        /* hover ek state hai hover kya krta hai ki button jo hota hai usko blink krne ka kaam krta hai */
+        .Pseudo:hover{
+            background-color: green;
+            height: 35px;
+            width: 170px;
+        }
+
+        /* active kya kam krta hai ki smjlo ham agar button ke box me click krke rakhte hai to colour dikhta hai, lekin jb tk click krke rakhoge tab tk hi dikhega aur jb chod doge tb uska jo original content hai usme chalga jayega, isko bolte hai active state*/
+        .Pseudo:active{
+            height: 35px;
+            width: 170px;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="Pseudo">
+        Learning Pseudo
+    </button>
+</body>
+</html>

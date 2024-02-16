@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <!-- Transition me 2 state hoti hai, ek hoti hai Initial state aur dusri hoti hai Final state. -->
+    <!-- Transition me types/Property bhi hote hai, ek hoti hai Property, Duration, time-Function, Delay  -->
+
+
+    <style>
+        .Pseudo{
+            height: 25px;
+            width: 150px;
+            background-color: gray;
+            border: 2px solid black;
+            border-radius: 10px;
+
+            transition-property: all;
+            /* Transition property me aapko agar sabko change krna hai to ALL bhi de skte hai */
+
+            transition-duration: 1s;
+            /* ye duration matlab konse time me effect jo hai vo dikhana chahiye */
+
+
+            transition-timing-function: ease-in-out;
+            /* transition-timing-function: steps(3); */
+            /* transition-timing-function: steps(6, end); */
+            /* timing function k undar ease-in-out hota hai, uske baad aap steps() bhi de skte hai, steps ke andar aapko value dena hoga to vo utne value k according show krega, steps me aap value k alava end bhi de skte hain,  */
+            
+            transition-delay: 0s;
+            /* effect dikhane ke liye kitna time lagana hai */
+
+
+
+
+
+
+            /* ek aur baat aapko agar ye sb transition effect agar ek hi line me dena ho to aap vaise bhi de skte ho jaise ki transition: all 1s ease-in-out 0s; is tarah */
+
+        }
+
+        .Pseudo:hover{
+            background-color: green;
+            height: 35px;
+            width: 170px;
+        }
+
+        .Pseudo:active{
+            height: 35px;
+            width: 170px;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="Pseudo">
+        Learning Pseudo
+    </button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id selector css me hash(#) se used hota hai aur jo bhi naam dete hai hash used krke usko niche body me id ke andar dena hota hai */
+        #first{
+            color: red;
+        }
+        #second{
+            color: green;
+        }
+    </style>
+    <style>
+        #First{
+            color: coral;
+        }
+        #Second{
+            color: indigo;
+        }
+
+
+        .random_text{
+            color: blue ;
+        }
+    </style>
+</head>
+<body>
+    <!-- ye sirf html ka id hai niche diya gaya vo, ye humne html me bhi padha tha, ye unique identifier hai isko heading me dete hai isko bus define kaise krte hai vo dekhlo  -->
+    <h1 id="first">id and class property</h1>
+    
+    
+    <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda excepturi omnis amet natus, aut, illum autem animi possimus beatae eveniet quod commodi, corrupti quo laudantium architecto dolores. Quidem, dolorum quia!</p>
+
+    <!-- aap log id jo hai vo div tag ke andar bhi de sakte hai -->
+    <div id="First">First Vlog</div>
+    <div id="Second">Second Vlog</div>
+    
+    <!-- hum log direct div ko automatic bhi la skte hai usme id direct bhi aa jayegi jese ki abhi first aur second naam ki div bani hai isliye hash lagake agar hum try krenge div lane ka to first,second ke naam ki automatic nhi aayegi kyoki uski pehle se hi aa gayi hai lekin koi bhi dusre naam ki hum try kre jese ki third fourth to automatic aa jayegi div , usko kese late hai bus aapko #third #fourth aisa likh dena hai hash lagake naam likh dena aur enter kr dena -->
+
+    <!-- (Class)agar hume class use krna hai to dot(.) lagake used krna padta hai upar style me dot lagake naam dena padta hai jese ki upar mene random_text ko aage dot lagaya hai aur jese body me div id hash lagake auto generate hoti hai vaise hi ye class body me dot lagake hoti hai -->
+    <p class="random_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, qui?</p>
+    <!-- class matlab jaise pehchanne ke liye hota hai jaise ki hum bachpan me class 7th, 8th me the to vo hum pehchante the ki hum konse class me hai vaise -->
+    
+</body>
+</html>

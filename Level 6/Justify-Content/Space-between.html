@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            background-color: crimson;
+            display: flex;
+
+            justify-content: space-between;
+            /* space between kya hota hai ki 3 elements hai hamare pass toh ek corner se start hoga beech me space chodke center me element aayega uske baad direct aakhir me element aayega */
+
+          
+        }
+        .Box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid rgb(28, 230, 10);
+            margin: 4px;
+            background-color: blueviolet;
+        }
+    </style>
+    </head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div class="Box">1</div>
+                <div class="Box">2</div>
+                <div class="Box">3</div>
+                
+            </div>        
+        </main>
+        
+    </body>
+</html>

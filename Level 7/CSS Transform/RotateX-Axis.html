@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate X-Axis</title>
+
+    <!-- X-Axis kya hota hai hum us element ko X-Axis me rotate kr skte hai uske liye niche dekho jo humne rotate used kiya hai, usme rotate ke aage x likhna padta hai jese ki rotatex -->
+
+    <style>
+        .Box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position:relative;
+            top: 50px;
+            left: 50px;
+            transition: all 1s ease-in-out 1s;
+        }
+        
+        .Box:hover{
+                transform: rotatex(45deg);
+                /* rotatex ka meaning hai x-axis me rotate hoga, aur vaise hi hum log usko y-axis me bhi rotate kr skte hai  */
+            }
+    </style>
+</head>
+<body>
+    <div class="Box">Rotate</div>
+</body>
+</html>

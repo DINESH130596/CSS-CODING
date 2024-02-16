@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        #first p{
+            color: darkseagreen;
+        }
+        
+        /* p{
+            color: blue;
+        } */
+        
+    </style>
+</head>
+<body>
+    <!-- descendant selector yani ke vo hota hai samaj lo ki child hota hai yane ke khudko pakdo hamare parents jo hai vo inscendant/inscestor hai aur hum log descendant hai -->
+    <!-- descendant ek ke andar ek ke andar likha jata hai -->
+    <div id="first">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, pariatur.
+        </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <!-- Note: ek baat smj lo ki vaise dekha jaye to mene yaha par color p tag ko diya hai aur p tag to 2 hai jese ki pehle div me bhi p tag hai aur usi ke niche bhi p tag lekin muje chahiye ki mene jo pehla div me p likha hai sirf usi ka color change hna chahiye to isliye upar style me jab hum p ko define kr rhe honge to uske aage hash likh kr humne jo id me naam likha hai first usko likhna padega yaha pr aap id me koi bhi naam de skte ho  -->
+</body>
+</html>

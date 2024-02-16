@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            background-color: crimson;
+            display: flex;
+
+            /* flex-wrap: nowrap; */
+            /* nowrap already bydefault hota hai vo usse kuch frk nhi padta, lekin isse kya hota hai ki box ki size matlab width vo kam leta hai kyoki 150 width container ke hisab se jyada hai to vo sirf 70 hi le rha hai, halaki hum inspect krke usko iphone 14pro max me dekh rhe hai isliye uski width kam dikh rhi hai, lekin wrap me aisa nhi hota jo width hai vhi dikhegi aap inspect krke dekh skte ho */
+           
+            /* flex-wrap: wrap; */
+            /* lekin jaise hi humne wrap used kiya to dekho 5th box automatically niche aagya browser pr, inspect krke dekho uski size bhi automatically 150*150 ho gyi hai */
+
+            flex-wrap: wrap-reverse;
+            /* kai baar hume new update dikhana hota hai websites pr bhi, to new data humesha upar aane ke liye hume wrap-reverse used krna padta hai, jese job ki websites me kaise hume new jobs humesha upar hi dikhte hai */
+
+            /* aap isme jo justify content hai usme aap space evenly, between, around ka istemal kr skte ho */
+
+        }
+        .Box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid rgb(28, 230, 10);
+            margin: 4px;
+            background-color: blueviolet;
+        }
+    </style>
+    </head>
+    <body>
+    
+        <main>
+            <div class="container">
+                <div class="Box">1</div>
+                <div class="Box">2</div>
+                <div class="Box">3</div>
+                <div class="Box">4</div>
+                <div class="Box">5</div>
+            </div>        
+        </main>
+        
+    </body>
+</html>

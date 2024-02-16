@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayProp</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: blueviolet;
+        }
+
+        #box1{
+            display: block;
+            /* hum agar inpect krke dekhe browser pr to dikhega ki div me display jo hai automatic bydefault block hi hota hai, agar me nhi bhi define krta abhi to bydefault vo block hi rehta hai yani ke vo nhi bhi diya to chalta hai  */
+        }
+
+        #box2{
+            display: inline;
+            /* inline krne ke baad kya hua ki jitna bhi text cover kiya tha naam ne bus sirf utna hi dikhega kyoki inline height aur width nhi show krta. aap browser pr jake inspect krke dekh skte hai , aur ek baat agar inline page me ek se jayda hue smj lo upar box1 ka bhi inline hota to horizontally box1 ke bajume box2 lag jata kyoki inline space nhi chodta kabhibhi.  */
+        }
+
+        #box3{
+            display: inline-block;
+            /* inline-block kya krta hai ki inline ki properties bhi dikhata hai lekin block ki properties bhi access krta hai jese ki height, width */
+        }
+
+        /* aur ek property hai display ki jo hai NONE, ye none kya kaam krta hai humne visibility ke case me dekha tha agar hum visibility ko hidden kr diya to box dikhna gayab ho jata tha lekin jagah vo phir bhi leta tha lekin display: none kya krta hai ki agar me yaha pr abhi box1 ko display none set krdu to vo gayab ho jayega aur saath hi saath vo jagah bhi chod dega, ye jagah ko pakad ke nhi rakhta */
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+
+</body>
+</html>

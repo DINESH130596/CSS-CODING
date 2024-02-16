@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+
+
+    <style>
+        .Box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position:relative;
+            top: 50px;
+            left: 50px;
+            transition: all 1s ease-in-out 1s;
+        }
+        
+        .Box:hover{
+                transform: Scale(2);
+                /* Scale means k vo bada hota hai, abhi humne jo parenthesis me diya hai 2 times hai isliye vo 2 time bada hua hai, aap isko chota bhi kr skte ho usme 0.5 dekar dekhna vo chota ho jayega  */
+            }
+    </style>
+</head>
+<body>
+    <div class="Box">Scale</div>
+</body>
+</html>

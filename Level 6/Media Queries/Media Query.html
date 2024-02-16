@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: mediumaquamarine;
+        }
+        /* generally media queries jo hai vo height pr nhi laga skte kyoki pages jo hai vo jyada tr vertically scrollable hote hain, horizontally koi prefer nhi krte isliye width pr used hota hai media queries */
+        
+        /* @media screen and (width: 300px) {
+            .box{
+                background-color: brown;
+            }
+        } */
+        /* inke types hote hai media queries ke ek humne dekha width, min-width, max-width */
+
+        
+        
+        /* aur ek type hai uska bolte hai COMBINATION matlab hum jo condition denge uske andar agar styles rhe to vo apply ho jayenge ye kaam krta hai combination iska used humne niche kiya hai, box ko width diya hai min max 200 se lekar 300 tk uske beech me rha to circle banega border radius ki madat se, jaise hi 200 se kam aur 300 se jyada gaya ki box apna original shape le lega  */
+        
+        @media screen and (min-width: 200px) and (max-width: 300px) {
+            .box{
+                border-radius: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>
